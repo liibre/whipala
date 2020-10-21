@@ -55,17 +55,30 @@ whipala()
     #> names      : layer 
     #> values     : 1, 7  (min, max)
 
+``` r
+br <- raster::getData("alt", country = "BRA")
+#> Warning in showSRID(uprojargs, format = "PROJ", multiline = "NO"): Discarded
+#> datum Unknown based on WGS84 ellipsoid in CRS definition
+br <- raster::aggregate(br, 150)
+whipala_map(br)
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+
 La Whipala es propiedad de la nación originaria, es decir de los
 Qhishwa-Aymaras, Guaraníes y de todo el pueblo
 
+Viva Bolivia, viva la minga en Colombia, no al genocidio de los pueblos
+indígenas en toda Sudamérica.
+
 ## W(H)IP
 
-  - [ ] Mejorar descripciones y fuentes
-  - [ ] Mejorar el purple
-  - [ ] Transformar colores a hex codes para transformar en paleta
-    (whipalette :P)
   - [x] Reorganizar la matriz para plotar en el orden correcto, o
     cambiar la manera de plotar.
   - [x] Crear rasters em vez de grids
-  - [ ] Crear mapas con la whipala \#goals
+  - [x] Crear mapas con la whipala \#goals
+  - [ ] Mejorar descripciones y fuentes
+  - [ ] Mejorar el violeta
+  - [ ] Transformar colores a hex codes para transformar en paleta
+    (whipalette :P)
   - [ ] Crear el logo del paquete

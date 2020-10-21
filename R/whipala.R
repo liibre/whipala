@@ -19,7 +19,7 @@ whipalette <- c ("white",
 #' @examples
 #' whipala()
 #' whipala(12)
-whipala <- function(ncol = 7, nrow) {
+whipala <- function(ncol = 7, nrow, plot = TRUE) {
   if (missing(nrow)) nrow <- ncol
   whi <- matrix(nrow = nrow, ncol = ncol)
   whi[1, ] <- ff <- rep_len(1:7, length.out = ncol)
@@ -28,6 +28,6 @@ whipala <- function(ncol = 7, nrow) {
   }
   r <- raster::raster(nrows = nrow, ncols = ncol)
   r <- raster::setValues(r, whi)
-  raster::plot(r, col = whipalette, legend = F)
+  if (plot) raster::plot(r, col = whipalette, legend = F)
   return(r)
 }
