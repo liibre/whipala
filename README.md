@@ -21,11 +21,25 @@ remotes::install_github("liibre/whipala")
 
 ## Ejemplo
 
+    #> Loading whipala
+
 ``` r
-library(whipal)
-## basic example code
-whipal
+library(whipala)
 ```
+
+``` r
+## basic example code
+whipala()
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />
+
+    #> NULL
+    whipala(ncol = 13)
+
+<img src="man/figures/README-example-2.png" width="100%" />
+
+    #> NULL
 
 La Whipala es propiedad de la nación originaria, es decir de los
 Qhishwa-Aymaras, Guaraníes y de todo el pueblo
