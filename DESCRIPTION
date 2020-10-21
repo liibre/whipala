@@ -1,0 +1,20 @@
+Package: whipala
+Title: la whipala andina en R
+Version: 0.0.0.9000
+Authors@R: c(
+      person("Andrea",
+        "Sánchez-Tapia",
+        email = "andreasancheztapia@gmail.com",
+        role = c("aut", "cre"),
+        comment = c(ORCID = "0000-0002-3521-4338")),
+      person("Sara",
+        "Mortara",
+        email = "saramortara@gmail.com",
+        role = c("aut"),
+        comment = c(ORCID = "0000-0001-6221-7537")))
+Description: Crea whipalas de diferentes dimensiones.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
