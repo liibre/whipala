@@ -4,12 +4,14 @@
 \alias{whipala}
 \title{Generador de whipalas de diferentes dimensiones}
 \usage{
-whipala(ncol = 7, nrow = ncol)
+whipala(ncol = 7, nrow, plot = TRUE)
 }
 \arguments{
 \item{ncol}{Número de columnas de la whipala deseada.}
 
 \item{nrow}{Número de líneas de la whipala deseada. La whipala es cuadrada entonces este valor no es necesario a priori. Si sólo se pide ncol nrow será el mismo valor}
+
+\item{plot}{Lógico. Para ver el gráfico}
 }
 \description{
 Generador de whipalas de diferentes dimensiones

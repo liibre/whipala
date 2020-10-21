@@ -1,4 +1,7 @@
 #' Plots a raster to a whipala
+#'
+#' @param raster a raster pbject
+#'
 #' @export
 #' @examples
 #' br <- raster::getData("alt", country = "BRA")

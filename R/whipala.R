@@ -1,20 +1,8 @@
-#' Los colores de la whipala
-#'
-#' Use crea_whipala() para construir whipalas de diferentes tamaños
-#'
-#' @export
-whipalette <- c ("white",
-                "yellow",
-                "orange",
-                "red",
-                "purple",
-                "blue",
-                "forestgreen")
-
 #' Generador de whipalas de diferentes dimensiones
 #'
 #' @param ncol Número de columnas de la whipala deseada.
 #' @param nrow Número de líneas de la whipala deseada. La whipala es cuadrada entonces este valor no es necesario a priori. Si sólo se pide ncol nrow será el mismo valor
+#' @param plot Lógico. Para ver el gráfico
 #' @export
 #' @examples
 #' whipala()
