@@ -36,8 +36,8 @@ whipala()
 
     #> class      : RasterLayer 
     #> dimensions : 7, 7, 49  (nrow, ncol, ncell)
-    #> resolution : 51.42857, 25.71429  (x, y)
-    #> extent     : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
+    #> resolution : 25.71429, 25.71429  (x, y)
+    #> extent     : -90, 90, -90, 90  (xmin, xmax, ymin, ymax)
     #> crs        : +proj=longlat +datum=WGS84 +no_defs 
     #> source     : memory
     #> names      : layer 
@@ -48,8 +48,8 @@ whipala()
 
     #> class      : RasterLayer 
     #> dimensions : 13, 13, 169  (nrow, ncol, ncell)
-    #> resolution : 27.69231, 13.84615  (x, y)
-    #> extent     : -180, 180, -90, 90  (xmin, xmax, ymin, ymax)
+    #> resolution : 13.84615, 13.84615  (x, y)
+    #> extent     : -90, 90, -90, 90  (xmin, xmax, ymin, ymax)
     #> crs        : +proj=longlat +datum=WGS84 +no_defs 
     #> source     : memory
     #> names      : layer 
@@ -57,9 +57,9 @@ whipala()
 
 ``` r
 br <- raster::getData("alt", country = "BRA")
-#> Warning in showSRID(uprojargs, format = "PROJ", multiline = "NO"): Discarded
-#> datum Unknown based on WGS84 ellipsoid in CRS definition
-br <- raster::aggregate(br, 150)
+#> Warning in showSRID(uprojargs, format = "PROJ", multiline = "NO", prefer_proj =
+#> prefer_proj): Discarded datum Unknown based on WGS84 ellipsoid in CRS definition
+br <- raster::aggregate(br, 200)
 whipala_map(br)
 ```
 
@@ -68,8 +68,8 @@ whipala_map(br)
 La Whipala es propiedad de la nación originaria, es decir de los
 Qhishwa-Aymaras, Guaraníes y de todo el pueblo
 
-Viva Bolivia, viva la minga en Colombia, no al genocidio de los pueblos
-indígenas en toda Sudamérica.
+Viva Bolivia, viva la Minga en Colombia, no al Marco Temporal en Brasil
+y no al genocidio de los pueblos indígenas en toda Sudamérica.
 
 ## W(H)IP
 
@@ -77,8 +77,8 @@ indígenas en toda Sudamérica.
     cambiar la manera de plotar.
   - [x] Crear rasters em vez de grids
   - [x] Crear mapas con la whipala \#goals
-  - [ ] Mejorar descripciones y fuentes
-  - [ ] Mejorar el violeta
-  - [ ] Transformar colores a hex codes para transformar en paleta
+  - [x] Mejorar el violeta
+  - [x] Transformar colores a hex codes para transformar en paleta
     (whipalette :P)
+  - [ ] Mejorar descripciones y fuentes
   - [ ] Crear el logo del paquete

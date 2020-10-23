@@ -16,6 +16,7 @@ whipala <- function(ncol = 7, nrow, plot = TRUE) {
   }
   r <- raster::raster(nrows = nrow, ncols = ncol)
   r <- raster::setValues(r, whi)
-  if (plot) raster::plot(r, col = whipalette, legend = F)
+  raster::extent(r) <- c(-90, 90, -90, 90)
+  if (plot) raster::plot(r, col = whipalette, legend = F, asp = 1)
   return(r)
 }
