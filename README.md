@@ -81,4 +81,4 @@ y no al genocidio de los pueblos indígenas en toda Sudamérica.
   - [x] Transformar colores a hex codes para transformar en paleta
     (whipalette :P)
   - [ ] Mejorar descripciones y fuentes
-  - [ ] Crear el logo del paquete
+  - [x] Crear el logo del paquete
