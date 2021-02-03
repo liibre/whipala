@@ -13,6 +13,8 @@ Authors@R: c(
         role = c("aut"),
         comment = c(ORCID = "0000-0001-6221-7537")))
 Description: Crea whipalas de diferentes dimensiones.
+URL: https://github.com/liibre/whipala
+BugReports: https://github.com/liibre/whipala/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
