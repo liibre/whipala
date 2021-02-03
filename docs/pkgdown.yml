@@ -2,7 +2,7 @@ pandoc: 2.3.1
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-02-03T12:14Z
+last_built: 2021-02-03T21:00Z
 urls:
   reference: https://liibre.github.io/whipala/reference
   article: https://liibre.github.io/whipala/articles
