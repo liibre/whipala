@@ -15,6 +15,8 @@ knitr::opts_chunk$set(
 
 # whipala
 
+<img src="./figs/whipala_logo.png" align="right" alt="" width="120" />
+
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -46,8 +48,9 @@ whipala()
 whipala(ncol = 13)
 ```
 
-```{r}
-br <- raster::getData("alt", country = "BRA")
+```{r mapa-brasil}
+if (!dir.exists("outputs")) {dir.create("outputs")}
+br <- raster::getData(name = "alt", country = "BRA", path = "outputs")
 br <- raster::aggregate(br, 200)
 whipala_map(br)
 ```
@@ -65,5 +68,29 @@ Viva Bolivia, viva la Minga en Colombia, no al Marco Temporal en Brasil y no al 
 - [x] Transformar colores a hex codes para transformar en paleta (whipalette :P)
 - [x] Hacer que la whipala original sea cuadrada
 - [ ] Mejorar descripciones y fuentes
-- [ ] Crear el logo del paquete 
+- [x] Crear el logo del paquete 
+
+Si desea recrear el hermoso logotipo del paquete, use los siguientes comandos: 
+
+```{r hexsticker, eval = FALSE}
+library(hexSticker)
+
+# Creando y guardando la bandera de whipala
+if (!dir.exists("figs")) {dir.create("figs")}
+png(filename = "figs/whipala_flag.png", bg = "transparent")
+whipala(axes = FALSE, box = FALSE)
+dev.off()
+
+# Definición la url de la imagen
+imgurl <- "figs/whipala_flag.png"
+
+sticker(imgurl,
+        package = "",
+        s_x = 1.05,
+        s_y = .95,
+        s_width = 1.4,
+        h_color = "black",
+        white_around_sticker = TRUE,
+        filename = "figs/whipala_logo.png")
+```
 
