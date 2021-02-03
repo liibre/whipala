@@ -4,3 +4,6 @@ README.Rmd
 R/whipala_map.R
 figs/
 outputs/
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
